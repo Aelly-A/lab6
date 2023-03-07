@@ -8,6 +8,10 @@ def main():
         if choice == '1':
             result = encode(number)
             print("Your password has been encoded and stored!\n")
+        elif choice == '2':
+            pass
+        elif choice == '3':
+            break
 
 
 def print_menu():
