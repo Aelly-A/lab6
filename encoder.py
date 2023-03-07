@@ -3,15 +3,16 @@ def main():
     while choice != '3':
         print_menu()
         choice = input("Please enter an option: ")
-        number = input("Please enter your password to encode: 12345555")
 
         if choice == '1':
-            result = encode(number)
-            print("Your password has been encoded and stored!\n")
+            unencoded = input("Please enter your password to encode: ")
+            encoded = encode(unencoded)
+            print("Your password has been encoded and stored!")
         elif choice == '2':
             pass
         elif choice == '3':
             break
+    print()
 
 
 def print_menu():
