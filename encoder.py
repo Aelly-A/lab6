@@ -5,15 +5,15 @@ def main():
         choice = input("Please enter an option: ")
 
         if choice == '1':
-            number = input("Please enter your password to encode: ")
-            result = encode(number)
-            print("Your password has been encoded and stored!\n")
+            unencoded = input("Please enter your password to encode: ")
+            encoded = encode(unencoded)
+            print("Your password has been encoded and stored!")
         elif choice == '2':
-            answer = decode(result)
-            print(f"The encoded password is {result}, and the original password is {answer}.")
-            print()
+            original = decode(encoded)
+            print(f"The encoded password is {unencoded}, and the original password is {original}.")
         elif choice == '3':
             break
+    print()
 
 
 def print_menu():
