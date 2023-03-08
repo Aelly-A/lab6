@@ -2,6 +2,7 @@ def main():
     choice = '0'
     while choice != '3':
         print_menu()
+        print()
         choice = input("Please enter an option: ")
 
         if choice == '1':
@@ -22,7 +23,6 @@ def print_menu():
     print('1. Encoder')
     print('2. Decoder')
     print('3. Exit')
-    print()
 
 
 def encode(number):
